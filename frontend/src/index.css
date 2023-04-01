@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  background: #FFFAF5;
+  ;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: Sora, sans-serif;
+}
+
+input,textarea,select,button{
+  font-size: inherit;
+  font-family: inherit;
+}
+
+:root{
+  --primary-color:#000958;
+  --desc-color:#656689;
+  --common-color: #FF5B2E;
+}
+
+/* ---------Common---------- */
+ul
+{
+    list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  max-width: calc(100% - 48px);
+}
+
+.btn{
+  --height: 56px;
+
+  display: inline-flex;
+
+  height: var(--height);
+  line-height: var(--height);
+  min-width: 130px;
+
+  font-weight: 600;
+  font-size: 1.4rem;  
+  justify-content: center;
+  align-items: center;
+  /* text-align: center;  */
+
+  border: 1px rgb(0, 9, 88, 0.7) solid;
+  border-radius: 99px;    
+  
+  color: var(--primary-color);
+}
+
+.btn:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.btn--primary{
+  color:#fff;
+  background: var(--common-color);
+  border: var(--common-color);
+}
+
+.btn__icon{
+  margin-left: 10px;
+  /* border: 1px solid #FD5056; */
+  background: #FFFAF5;
+  box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
+  height: 20px;
+  width: 20px;
+  border-radius: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section__heading{
+  font-weight: 700;
+  font-size: 5.2rem;
+  line-height: 119%;
+  color: var(--primary-color);
+}
+
+.section__desc{
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 188%;
+  /* or 188% */
+
+  color: var(--desc-color);
+}

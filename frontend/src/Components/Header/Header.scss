@@ -1,0 +1,32 @@
+.header{
+    padding: 26px 0;
+
+    .header__inner{
+        display: flex;
+        justify-content: space-between;   
+        align-items: center;
+    }
+
+    .header-action__btn{
+        --height: 50px;
+        align-items: center;
+        min-width: 118px;
+        height: var(--height);    
+    }
+
+    .header-action__link,
+    .nav__link
+    {    
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1;
+        color: #5e6085;
+        padding: 8px 18px;
+    }
+}
+  
+  
+  
+  
+  
+  
