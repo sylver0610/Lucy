@@ -2,6 +2,10 @@
 import './App.css';
 import { Link, Outlet } from 'react-router-dom'
 import Header from './Components/Header/Header';
+import Hero from './Components/Hero/Hero';
+import About from './Components/About/About';
+import Service from './Components/Assist/Service'
+import Staff from './Components/Staff/Staff';
 // import Logo from '../public/assets/img/Logo.svg';
 function App() {
   return (
@@ -15,7 +19,10 @@ function App() {
     // </div>
     <>
     <Header/>
-    
+    <Hero/>
+    <About/>
+    <Service/>
+    <Staff/>
     </>
     
   );
