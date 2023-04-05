@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import './Header.scss'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 const Header = () => {
     return (
         <header class="header">
@@ -16,7 +16,7 @@ const Header = () => {
             
             {/* <!-- header action --> */}
             <div class="header-action">
-                <Link to="login" class="header-action__link">Sign in</Link>
+                <Link to="login" className="header-action__link" state={{isLogIn:true}}>Sign in</Link>
                 {/* <a href="#!" class="btn header-action__btn">Sign up</a> */}
                 <Link to="register" className='btn header-action__btn'>Sign up</Link>
             </div>

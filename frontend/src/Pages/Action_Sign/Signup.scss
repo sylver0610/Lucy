@@ -187,10 +187,52 @@
             margin-top: 65px;
             margin-bottom: 60px;
             .form__input{
+               
+                position: relative;
                 margin-top: 38px;                       
                 &:nth-child(1){
                     margin-top: 0;
                 }
+
+                .input__error{
+                    position: relative;
+                    margin-top: 10px;
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    line-height: 1;
+                    /* identical to box height, or 100% */                   
+
+                    color: #FF5B2E;
+
+                    // &:after{
+                    //     display: none;
+                    //     position: absolute;
+                    //     content: '';
+                    //     width: 10px;
+                    //     height: 10px;
+                    //     border: 1px solid green;
+                    //     border-radius: 50%;
+                    //     top: 0;
+                    //     right: 0;
+                    //     background: green($color: #000000);
+                    // }
+
+                
+                }
+
+                span{
+                    position: absolute;
+                    content: '';
+                    top: 14px;
+                    right: 0;
+                    padding-right: 10px;
+                    height: 20px;
+                    color: red;
+                    // display: none;
+                }
+
+                
             }
             .cta-login{
                 cursor: pointer;

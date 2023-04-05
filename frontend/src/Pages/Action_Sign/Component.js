@@ -37,7 +37,7 @@ height: 100vh;
     opacity: 1;
     z-index: 5;
   `
-        : null}
+    : null}
  `;
 
 
@@ -145,8 +145,8 @@ export const Input = styled.input`
 export const Extra = styled.div`
 display: flex;
 justify-content: center;
-margin-top: 38px;
-width: 320px;
+margin: 38px auto auto 0;
+width: 100%;
 font-weight: 500;
 font-size: 1.6rem;
 line-height: 1.5;
@@ -193,7 +193,7 @@ overflow: hidden;
 transition: transform 0.6s ease-in-out;
 z-index: 100;
 ${props =>
-        props.signinIn !== true ? `transform: translateX(-100%);` : null}
+    props.signinIn !== true ? `transform: translateX(-100%);` : null}
 `;
 
 export const Overlay = styled.div`
@@ -240,9 +240,13 @@ export const RightOverlayPanel = styled(OverlayPanel)`
  `;
 
 export const Paragraph = styled.p`
- font-size: 14px;
-   font-weight: 100;
-   line-height: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 30px;
+    /* or 188% */
+
+
+    color: #656689; 
    letter-spacing: 0.5px;
    margin: 20px 0 30px
  `;

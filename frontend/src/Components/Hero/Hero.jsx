@@ -1,11 +1,12 @@
 import React from 'react'
 import './Hero.scss'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 const Hero = () => {
     const navigate = useNavigate();
-    const handleLogin = () => {
-        navigate('/login')
-    }
+    // const handleLogin = () => {
+    //     navigate('/login')
+    // }
+    
     return (
         
         <section class="hero">
@@ -83,7 +84,7 @@ const Hero = () => {
                     including daycare, private walks, office duty and spa.
                     </p>
                     <div class="hero-action">
-                    <a  class="btn btn--primary hero-action__btn" onClick={handleLogin}>
+                    <Link to='login' class="btn btn--primary hero-action__btn" state={{isLogIn:true}}>
                         Book a Meet
                         <span class="btn__icon">
                         <svg
@@ -101,7 +102,7 @@ const Hero = () => {
                             />
                         </svg>
                         </span>
-                    </a>
+                    </Link>
                     <a href="#!" class="hero__cta-link">Schedule a Call</a>
                     </div>
                 </section>
