@@ -12,6 +12,7 @@ import Invoice from './Pages/Invoice';
 import './index.scss'
 
 import Action from './Pages/Action_Sign/Action';
+import Admin from './Pages/Account/Admin';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
@@ -25,6 +26,7 @@ root.render(
       </Route>
       <Route path='/register' element={<Action />} />
       <Route path='/login' element={<Action />} />
+      <Route path='/account' element={<Admin />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
 

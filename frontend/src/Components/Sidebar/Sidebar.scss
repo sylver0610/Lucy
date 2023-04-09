@@ -1,0 +1,85 @@
+.ps-sidebar-container{
+    height: 100vh !important;
+    justify-content: space-between;
+    .profile{
+        border-bottom: 1px solid rgba(173, 173, 173, 0.2);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        padding: 20px 20px;
+        
+        img{
+            width: 100%;
+            height: 50px;
+        }
+    }
+    
+    .close-menu{
+        color: #000;
+        position: absolute;
+        right: 0;
+        z-index: 9999;
+        line-height: 20px;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 22px;
+        top: 80px;
+        cursor: pointer;
+    }
+    .ps-menu-root{
+        margin-top: 20px;
+        .ps-menuitem-root{
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            align-items: center;
+            
+            .ps-menu-button{
+                width: 100%;
+
+                &:hover{
+                    background: #FFDAB9;
+                    border: 1px solid #FFDAB9;
+                    border-radius: 12px;
+                }
+                &.ps-active{
+                    border: 1px solid #FBC4AB;
+                    background: #FFF;
+                    border-radius: 12px;
+                }
+                .ps-menu-icon{
+                    &.ps-active svg {
+                        path, polyline{
+                            color: #F08080;
+                            opacity: 1;
+                            border-radius: 12px;
+                        }
+                        
+                    }
+                }
+                .ps-menu-label {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    height: 20px;
+
+                   
+                }
+            }
+            
+        }
+    }
+    
+
+    .sidebar__footer{
+        position: absolute;
+        bottom: 0;
+        padding-bottom: 30px;
+        // display: block;
+        width: 100%;
+    }
+
+}

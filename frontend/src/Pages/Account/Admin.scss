@@ -1,0 +1,50 @@
+.admin__container{
+    display: flex;
+    // justify-content: end;
+    // align-items: center;
+    .ps-sidebar-root{
+        min-width: 190px;
+        width: 190px;
+        background-color: #ffcad4;
+        .ps-menu-root{
+            .ps-menuitem-root{
+                height: 85px;
+                // display: flex;
+                // justify-content: flex-start;
+                // width: 100%;
+                // align-items: center;
+                
+                // .ps-menu-button{
+                //     width: 100%;
+                //     &.ps-active{
+                //         border: 1px solid #FBC4AB;
+                //         background: #FFF;
+                //         border-radius: 12px;
+                //     }
+                //     .ps-menu-icon{
+                //         &.ps-active svg {
+                //             path, polyline{
+                //                 color: #F08080;
+                //                 opacity: 1;
+                //                 border-radius: 12px;
+                //             }
+                            
+                //         }
+                //     }
+                //     .ps-menu-label {
+                //         font-family: 'Poppins', sans-serif;
+                //         font-size: 14px;
+                //         display: flex;
+                //         align-items: center;
+                //         height: 20px;
+    
+                       
+                //     }
+                // }
+            }
+            
+        }
+
+        
+    }
+}
