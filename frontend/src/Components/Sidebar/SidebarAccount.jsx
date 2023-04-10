@@ -25,24 +25,30 @@ const SidebarAccount = () => {
     const [menuCollapse, setMenuCollapse] = useState(false)
 
     //create a custom function that will change menucollapse state from false to true and true to false
-    const menuIconClick = () => {
-    //condition checking to change state from true to false and vice versa
-    collapseSidebar();
-  };
+    
     return (    
         <>
-        <Sidebar>
-            <section className="profile">
+        <Sidebar >
+            <header>
+                <section className="profile">
+                    {/* {!collapsed ? (
+                        <img src="/assets/img/Logo.svg" alt="Lucy" class="logo" />
+                    ) : (
+                        <img src="/assets/img/logo.png" alt="Lucy" class="logo1" />
+                    )            
+                } */}
                 <img src="/assets/img/Logo.svg" alt="Lucy" class="logo" />
-            </section>
-            <div className="close-menu" onClick={() => collapseSidebar()}>
-                {/* changing menu collapse icon on click */}
-              {collapsed ? (
-                <FiArrowRightCircle/>    
-              ) : (                 
-                <FiArrowLeftCircle/>      
-              )}
-            </div>
+                </section>
+                <section className="close-menu" onClick={() => collapseSidebar()}>
+                    {/* changing menu collapse icon on click */}
+                {collapsed ? (
+                    <FiArrowRightCircle/>    
+                ) : (                 
+                    <FiArrowLeftCircle/>      
+                )}
+                </section>
+            </header>
+            
             <Menu>
             <Item
                 title="Dashboard"
@@ -90,9 +96,7 @@ const SidebarAccount = () => {
 
         
         </Sidebar>
-        {/* <main>
-            <button onClick={() => collapseSidebar()}>Collapse</button>
-        </main> */}
+       
         </>
        
    
