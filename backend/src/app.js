@@ -9,13 +9,16 @@ app.use(morgan("dev"));
 app.use(helmet());
 app.use(compression());
 //init db
+require('./dbs/init.mongodb.js')
 
+// const { checkOverLoad } = require('./helpers/check.connect.js');
+// checkOverLoad()
 //init router
 app.get('/', (req, res, next) => {
     const strCompress = 'Hello Server!'
     return res.status(200).json({
-        message: 'Welcome',
-        metadata: strCompress.repeat(30000)
+        message: 'Welcome'
+
     })
 })
 
