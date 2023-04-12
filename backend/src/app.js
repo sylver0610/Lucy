@@ -10,19 +10,17 @@ const app = express()
 app.use(morgan("dev"));
 app.use(helmet());
 app.use(compression());
+app.use(express.json())
+app.use(express.urlencoded({
+    extends: true
+}));
 //init db
 require('./dbs/init.mongodb.js')
 
 // const { checkOverLoad } = require('./helpers/check.connect.js');
 // checkOverLoad()
 //init router
-app.get('/', (req, res, next) => {
-    const strCompress = 'Hello Server!'
-    return res.status(200).json({
-        message: 'Welcome'
-
-    })
-})
+app.use('/', require('./routers/index.js'))
 
 //handling error
 
