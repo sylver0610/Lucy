@@ -1,0 +1,83 @@
+.admin__content{
+    background: #FFFAF5;
+    width: 100% ;
+    display: flex;
+    flex-direction: column;
+    .navbar{
+    
+        .navbar__container{
+            display: flex;            
+            justify-content: space-between;        
+            flex-direction: row;
+            padding: 0 15px;
+            height: 70px;
+            
+            gap:10px;
+            .navbar__title{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap:10px;
+                min-width: 300px;
+                .navbar__toggler{
+                    cursor: pointer;
+                    padding: 4px 12px;
+                    font-size: large;
+                }
+                .title{
+                    font-family: 'Poppins',sans-serif;
+                    
+                        font-weight: 700;
+                        font-size: 3.2rem;
+                        line-height: 119%;
+                        color: #000958;
+                }
+            }
+            .navbar__search{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin: 0 16px;
+                input{
+                    padding: 13px 20px 11px;
+                    border: 1px solid #2c2e33;
+                    width:100%;
+                    border-radius: 6px;
+                }
+            }
+            .navbar__info{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-left: auto;
+                width: 400px;
+                cursor: pointer;
+                .navbar__nofi{
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                }
+                .navbar-profile{
+                    margin: 0 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .navbar__avatar{
+                        width: 35px;
+                        height: 35px;
+                        border-radius: 50%;
+                    }
+                    .navbar-profile-name{
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+        
+    }
+    .main-content{
+        .main-container{
+            padding: 30px 28px;
+        }
+    }
+}

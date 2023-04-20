@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App'
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import Invoices from './Pages/Invoices';
 import Expenses from './Pages/Expenses';
 import NotFound from './Pages/NotFound';
@@ -29,7 +30,20 @@ root.render(
       <Route path='/account' element={<Admin />} />
       <Route path='*' element={<NotFound />} />
     </Routes>
-
+    <ToastContainer
+      position="top-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      theme="light"
+    />
+    {/* Same as */}
+    <ToastContainer />
   </BrowserRouter>
 
 );
