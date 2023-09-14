@@ -1,21 +1,24 @@
 `use strict`
 
-const keytokenModel = require("../models/keytoken.model")
+const db = require("../models/index")
 class KeyTokenService {
 
     static createKeyToken = async ({ userId, publicKey, privateKey }) => {
         try {
-            const tokens = await keytokenModel.create({
-                user: userId,
-                publicKey,
-                privateKey
+            // console.log(`Insert here: ${userId} - ${publicKey} - ${privateKey}`)
+            const tokens = await db.KeyToken.create({
+                userId: userId,
+                public_key: publicKey,
+                private_key: privateKey
             })
 
-            return tokens ? tokens.publicKey : null
+            return tokens ? tokens.public_key : null
         } catch (error) {
             return error
         }
     }
+
+    // static findKeyBy
 }
 
 module.exports = KeyTokenService;

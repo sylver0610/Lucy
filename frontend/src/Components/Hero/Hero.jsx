@@ -9,65 +9,65 @@ const Hero = () => {
     
     return (
         
-        <section class="hero">
-            <div class="container">
-                <div class="hero__inner">
-                <div class="hero__media">
-                    <div class="hero__img-wrap">
+        <section className="hero">
+            <div className="container">
+                <div className="hero__inner">
+                <div className="hero__media">
+                    <div className="hero__img-wrap">
                         <img
                             src="/assets/img/red-white-cat-i-white-studio-removebg.png"
                             alt=""
-                            class="hero__img"
+                            className="hero__img"
                         />
                     {/* <!-- Decorators --> */}
                         <img
                             src="/assets/img/decor-1.svg"
                             alt=""
-                            class="hero__decor decor__left"
+                            className="hero__decor decor__left"
                         />
                         <img
                             src="/assets/img/decor-2.svg"
                             alt=""
-                            class="hero__decor decor__right"
+                            className="hero__decor decor__right"
                         />
                     </div>
-                    <div class="hero__img-wrap hero__img-wrap-small">
-                        <img src="/assets/img/pet-02.png" alt="" class="hero__img" />
+                    <div className="hero__img-wrap hero__img-wrap-small">
+                        <img src="/assets/img/pet-02.png" alt="" className="hero__img" />
                     </div>
-                    <div class="hero__list">
+                    <div className="hero__list">
                     {/* <!-- hero list item 1 --> */}
-                    <div class="hero-list-item">
+                    <div className="hero-list-item">
                         <img
                         src="/assets/img/pet-03.png"
                         alt=""
-                        class="hero-list-item__thumb"
+                        className="hero-list-item__thumb"
                         />
 
-                        <div class="hero-list-item__info">
-                            <p class="hero-list-item__title">Pet Health</p>
-                            <div class="hero-list-item__skeleton"></div>
+                        <div className="hero-list-item__info">
+                            <p className="hero-list-item__title">Pet Health</p>
+                            <div className="hero-list-item__skeleton"></div>
                             <div
-                                class="hero-list-item__skeleton"
+                                className="hero-list-item__skeleton"
                                 style={{"--width": "39px"}}
                             ></div>
                         </div>
                     </div>
 
-                    <div class="hero-list-item__separate"></div>
+                    <div className="hero-list-item__separate"></div>
                     {/* <!-- hero list item 2 --> */}
-                    <div class="hero-list-item">
+                    <div className="hero-list-item">
                         <img
                         src="/assets/img/pet-04.png"
                         alt=""
-                        class="hero-list-item__thumb"
+                        className="hero-list-item__thumb"
                         style={{"--bg": "#c6e2fa"}}
                         />
 
-                        <div class="hero-list-item__info">
-                        <p class="hero-list-item__title">Pet care</p>
-                        <div class="hero-list-item__skeleton"></div>
+                        <div className="hero-list-item__info">
+                        <p className="hero-list-item__title">Pet care</p>
+                        <div className="hero-list-item__skeleton"></div>
                         <div
-                            class="hero-list-item__skeleton"
+                            className="hero-list-item__skeleton"
                             style={{"--width": "39px"}}
                         ></div>
                         </div>
@@ -75,18 +75,18 @@ const Hero = () => {
                     </div>
                 </div>
                 {/* <!-- Content --> */}
-                <section class="hero__content">
-                    <h1 class="hero__heading">
+                <section className="hero__content">
+                    <h1 className="hero__heading">
                     Established & Trusted Pet Care Service
                     </h1>
-                    <p class="hero__desc">
+                    <p className="hero__desc">
                     Discover a wide variety of Pawsitive services to choose from,
                     including daycare, private walks, office duty and spa.
                     </p>
-                    <div class="hero-action">
-                    <Link to='login' class="btn btn--primary hero-action__btn" state={{isLogIn:true}}>
+                    <div className="hero-action">
+                    <Link to='login' className="btn-a btn--primary hero-action__btn" state={{isLogIn:true}}>
                         Book a Meet
-                        <span class="btn__icon">
+                        <span className="btn__icon">
                         <svg
                             width="5"
                             height="6"
@@ -103,7 +103,7 @@ const Hero = () => {
                         </svg>
                         </span>
                     </Link>
-                    <a href="#!" class="hero__cta-link">Schedule a Call</a>
+                    <a href="#!" className="hero__cta-link">Schedule a Call</a>
                     </div>
                 </section>
                 </div>

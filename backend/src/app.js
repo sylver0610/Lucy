@@ -3,9 +3,14 @@ const express = require('express');
 const morgan = require('morgan');
 const helmet = require('helmet');
 const compression = require('compression');
-
+const cors = require('cors');
+const bodyParser = require('body-parser');
 const app = express()
+var os = require('os');
 
+// console.log(os.cpus());
+console.log(os.totalmem());
+console.log(os.freemem())
 // console.log(`Process:: `, process.env)
 //init middleware
 app.use(morgan("dev"));
@@ -15,6 +20,17 @@ app.use(express.json())
 app.use(express.urlencoded({
     extends: true
 }));
+// app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({ extended: true }))
+const corsOptions = {
+    origin: '*',
+    methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'PATCH', 'DELETE'],
+    // allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+    // credentials: true,
+
+}
+
+app.use(cors(corsOptions));
 //init db
 require('./dbs/init.postgres.js')
 

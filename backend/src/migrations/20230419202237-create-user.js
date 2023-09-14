@@ -40,11 +40,19 @@ module.exports = {
       },
       gender: {
         allowNull: true,
-        type: Sequelize.BOOLEAN
+        type: Sequelize.STRING
       },
       roleId: {
         allowNull: true,
         type: Sequelize.STRING
+      },
+      refresh_token: {
+        allowNull: true,
+        type: Sequelize.STRING
+      },
+      refresh_expired: {
+        allowNull: true,
+        type: Sequelize.DATE
       },
       createdAt: {
         allowNull: false,

@@ -3,22 +3,22 @@ import './Navbar.scss'
 const Navbar = () => {
     return (
         /* <!-- navbar --> */
-        <nav class="navbar">
-        <ul class="navbar__list">
-        <li class="navbar__item">
-            <a href="#!" class="nav__link">Home</a>
+        <nav className="navbar">
+        <ul className="navbar__list">
+        <li className="navbar__item">
+            <a href="#!" className="nav__link">Home</a>
         </li>
-        <li class="navbar__item">
-            <a href="#!" class="nav__link">About</a>
+        <li className="navbar__item">
+            <a href="#!" className="nav__link">About</a>
         </li>
-        <li class="navbar__item">
-            <a href="#!" class="nav__link">Services & Rates</a>
+        <li className="navbar__item">
+            <a href="#!" className="nav__link">Services & Rates</a>
         </li>
-        <li class="navbar__item">
-            <a href="#!" class="nav__link">Reviews</a>
+        <li className="navbar__item">
+            <a href="#!" className="nav__link">Reviews</a>
         </li>
-        <li class="navbar__item">
-            <a href="#!" class="nav__link">Contacts us</a>
+        <li className="navbar__item">
+            <a href="#!" className="nav__link">Contacts us</a>
         </li>
         </ul>
     </nav>

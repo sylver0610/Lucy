@@ -11,6 +11,11 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      User.belongsTo(models.AllCode, { foreignKey: 'positionId', targetKey: 'key', as: 'positionData' })
+      User.belongsTo(models.AllCode, { foreignKey: 'gender', targetKey: 'key', as: 'genderData' })
+      User.hasOne(models.Markdown, { foreignKey: 'doctorId' })
+      User.hasOne(models.DoctorInfo, { foreignKey: 'doctorId' })
+      User.hasMany(models.Pet, { foreignKey: 'clientId' })
     }
   }
   User.init({
@@ -22,8 +27,10 @@ module.exports = (sequelize, DataTypes) => {
     phoneNumber: DataTypes.STRING,
     positionId: DataTypes.STRING,
     image: DataTypes.BLOB('long'),
-    gender: DataTypes.BOOLEAN,
+    gender: DataTypes.STRING,
     roleId: DataTypes.STRING,
+    refresh_token: DataTypes.STRING,
+    refresh_expired: DataTypes.DATE,
 
   }, {
     sequelize,

@@ -1,0 +1,42 @@
+--INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('ROLE','R1','Admin', 'Quản trị viên' ); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") VALUES('ROLE','R1','Admin', 'Quản trị viên',now(),now());
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('ROLE','R2','Doctor', 'Bác sĩ',now(),now() ); 								
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('ROLE','R3','Patient', 'Bệnh nhân' ,now(),now());
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('ROLE','R4','Pet', 'Thú cưng' ,now(),now());
+
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('STATUS','S1','New', 'Lịch hẹn mới',now(),now() ); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('STATUS','S2','Confirmed', 'Đã xác nhận' ,now(),now()); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('STATUS','S3','Done', 'Đã khám xong',now(),now() ); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('STATUS','S4','Cancel', 'Đã hủy' ,now(),now()); 									
+									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('TIME','T1','8:00 AM - 9:00 AM', '8:00 - 9:00',now(),now() ); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('TIME','T2','9:00 AM - 10:00 AM', '9:00 - 10:00' ,now(),now()); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('TIME','T3','10:00 AM - 11:00 AM', '10:00 - 11:00' ,now(),now()); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('TIME','T4','11:00 AM - 0:00 PM', '11:00 - 12:00',now(),now() ); 									
+									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('TIME','T5','1:00 PM - 2:00 PM', '13:00 - 14:00',now(),now() ); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('TIME','T6','2:00 PM - 3:00 PM', '14:00 - 15:00' ,now(),now()); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('TIME','T7','3:00 PM - 4:00 PM', '15:00 - 16:00',now(),now() ); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('TIME','T8','4:00 PM - 5:00 PM', '16:00 - 17:00' ,now(),now()); 									
+									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('POSITION','P0','None', 'Bác sĩ',now(),now() ); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('POSITION','P1','Master', 'Thạc sĩ' ,now(),now()); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('POSITION','P2','Doctor', 'Tiến sĩ' ,now(),now()); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('POSITION','P3','Associate Professor', 'Phó giáo sư' ,now(),now()); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('POSITION','P4','Professor', 'Giáo sư' ,now(),now()); 									
+									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('GENDER','M','Male', 'Nam',now(),now() ); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('GENDER','F','Female', 'Nữ' ,now(),now()); 									
+INSERT INTO  "AllCodes" ( "type", "key", "valueEn", "valueVi", "createdAt", "updatedAt") values ('GENDER','O','Other', 'Khác' ,now(),now()); 						
+
+INSERT INTO public."AllCodes" (type,key, "valueEn", "valueVi","createdAt","updatedAt") values ('PAYMENT','PAY1','Cash', 'Tiền mặt',NOW() ,NOW()); 									
+INSERT INTO public."AllCodes" (type,key, "valueEn", "valueVi","createdAt","updatedAt") values ('PAYMENT','PAY2','Credit card', 'Thẻ ATM',NOW() ,NOW() ); 									
+INSERT INTO public."AllCodes" (type,key, "valueEn", "valueVi","createdAt","updatedAt") values ('PAYMENT','PAY3','All payment method', 'Tất cả',NOW() ,NOW() ); 	
+
+INSERT INTO "AllCodes" ("type", "key", "valueEn", "valueVi","valueRu","createdAt","updatedAt") values ('PRICE','PRI1','10', '200000','1000',NOW() ,NOW() ); 								
+INSERT INTO "AllCodes" ("type", "key", "valueEn", "valueVi","valueRu","createdAt","updatedAt") values ('PRICE','PRI2','15', '250000','1500',NOW() ,NOW() ); 								
+INSERT INTO "AllCodes" ("type", "key", "valueEn", "valueVi","valueRu","createdAt","updatedAt") values ('PRICE','PRI3','20', '300000','2000',NOW() ,NOW() ); 								
+INSERT INTO "AllCodes" ("type", "key", "valueEn", "valueVi","valueRu","createdAt","updatedAt") values ('PRICE','PRI4','25', '350000','2500',NOW() ,NOW() ); 								
+INSERT INTO "AllCodes" ("type", "key", "valueEn", "valueVi","valueRu","createdAt","updatedAt") values ('PRICE','PRI5','30', '400000','3000',NOW() ,NOW() ); 								
+INSERT INTO "AllCodes" ("type", "key", "valueEn", "valueVi","valueRu","createdAt","updatedAt") values ('PRICE','PRI6','35', '450000','3500',NOW() ,NOW()); 								
+INSERT INTO "AllCodes" ("type", "key", "valueEn", "valueVi","valueRu","createdAt","updatedAt") values ('PRICE','PRI7','40', '500000','4000',NOW() ,NOW() ); 								

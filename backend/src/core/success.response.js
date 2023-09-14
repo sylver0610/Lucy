@@ -1,12 +1,6 @@
 `use strict`
 
 const StatusCode = {
-    OK: 0,
-    CREATED: 0,
-
-}
-
-const Code = {
     OK: 200,
     CREATED: 201,
 
@@ -19,32 +13,26 @@ const ReasonStatuscode = {
 }
 
 class SuccessResponse {
-    constructor({ DT = "", EC = 0, EM = ReasonStatuscode.OK, status = Code.OK }) {
-        // this.message = !message ? EM : message
-        this.status = status
-        this.EC = EC
-        this.DT = DT
-        this.EM = EM
+    constructor({ message, statusCode = StatusCode.OK, reasonStatuscode = ReasonStatuscode.OK, metadata = {} }) {
+        this.message = !message ? reasonStatuscode : message
+        this.status = statusCode
+        this.metadata = metadata
     }
 
     send(res, headers = {}) {
-        return res.status(this.status).json({
-            DT: this.DT,
-            EC: this.EC,
-            EM: this.EM
-        })
+        return res.status(this.status).json(this)
     }
 }
 
 class OK extends SuccessResponse {
-    constructor({ EM, DT }) {
-        super({ EM, DT })
+    constructor({ message, metadata }) {
+        super({ message, metadata })
     }
 }
 
 class CREATED extends SuccessResponse {
-    constructor({ EM, DT, status = Code.CREATED }) {
-        super({ EM, DT, status })
+    constructor({ message, statusCode = StatusCode.CREATED, reasonStatuscode = ReasonStatuscode.CREATED, metadata }) {
+        super({ message, statusCode, reasonStatuscode, metadata })
     }
 }
 

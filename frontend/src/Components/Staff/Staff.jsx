@@ -4,56 +4,56 @@ import './Staff.scss'
 const Staff = () => {
     return (
         // <!-- staff -->
-        <section class="staff">
-            <div class="container">
-                <section class="staff__header">
-                    <p class="staff__header-label service__header-label">
+        <section className="staff">
+            <div className="container">
+                <section className="staff__header">
+                    <p className="staff__header-label service__header-label">
                         Pet Care Staff
                     </p>
-                    <h2 class="staff__header-title section__heading">
+                    <h2 className="staff__header-title section__heading">
                         Meet Our Groomers
                     </h2>
                 </section>
-                <div class="staff__body">
-                    <section class="staff__info">
-                        <div class="staff__avatar">
-                            <img src="./assets/img/st1.png" alt="" class="staff__img" />
+                <div className="staff__body">
+                    <section className="staff__info">
+                        <div className="staff__avatar">
+                            <img src="./assets/img/st1.png" alt="" className="staff__img" />
                         </div>
-                        <p class="staff__position">Pet Trainer</p>
-                        <p class="staff__name">Meghan Samit</p>
+                        <p className="staff__position">Pet Trainer</p>
+                        <p className="staff__name">Meghan Samit</p>
                     </section>
-                    <section class="staff__info">
+                    <section className="staff__info">
                         <div
-                        class="staff__avatar"
+                        className="staff__avatar"
                         style={{"--bg": "linear-gradient(180deg, #ff997e 0%, #f3752e 100%)"}}
                         >
-                            <img src="./assets/img/st2.png" alt="" class="staff__img" />
+                            <img src="./assets/img/st2.png" alt="" className="staff__img" />
                         </div>
-                        <p class="staff__position">Veterinarian</p>
-                        <p class="staff__name">Alissa Silva</p>
+                        <p className="staff__position">Veterinarian</p>
+                        <p className="staff__name">Alissa Silva</p>
                     </section>
-                    <section class="staff__info">
+                    <section className="staff__info">
                         <div
-                        class="staff__avatar"
+                        className="staff__avatar"
                         style={{"--bg": "linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%)"}}
                         >
-                            <img src="./assets/img/st3.png" alt="" class="staff__img" />
+                            <img src="./assets/img/st3.png" alt="" className="staff__img" />
                         </div>
-                        <p class="staff__position">Veterinarian</p>
-                        <p class="staff__name">Cindy Harris</p>
+                        <p className="staff__position">Veterinarian</p>
+                        <p className="staff__name">Cindy Harris</p>
                     </section>
-                    <section class="staff__info">
+                    <section className="staff__info">
                         <div
-                        class="staff__avatar"
+                        className="staff__avatar"
                         style={{"--bg": "linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%)"}}
                         >
-                            <img src="./assets/img/st4.png" alt="" class="staff__img" />
+                            <img src="./assets/img/st4.png" alt="" className="staff__img" />
                         </div>
-                        <p class="staff__position">Animal Caretaker</p>
-                        <p class="staff__name">Lucas Tony</p>
+                        <p className="staff__position">Animal Caretaker</p>
+                        <p className="staff__name">Lucas Tony</p>
                     </section>
                 </div>
-                <a href="#!" class="btn staff__btn service__btn-action"
+                <a href="#!" className="btn-a staff__btn service__btn-action"
                 >View All Team</a
                 >
             </div>

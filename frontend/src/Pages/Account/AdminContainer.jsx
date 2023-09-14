@@ -1,29 +1,49 @@
 import React, { useState } from 'react'
 import { Sidebar, Menu, MenuItem, SubMenu ,useProSidebar,} from 'react-pro-sidebar';
-import { Link } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
+import {useSelector} from 'react-redux'
 import SidebarAccount from '../../Components/Sidebar/SidebarAccount';
 import {FiMenu } from 'react-icons/fi';
 import {BsBell} from 'react-icons/bs'
 import './AdminContainer.scss'
 const AdminContainer = () => {
+    const navigate = useNavigate();
+    const userInfo = useSelector(state => state.user?.account?.user)
+    const roleUser = userInfo.roleId
+    const convertRole = (roleId) => {
+        if (roleId === 'R1') {
+            return 'Admin'
+        } else if (roleId === 'R2') {
+            return 'Doctor'
+        } else {
+            return 'Client'
+        }
+    }
     const Item = ({title, to ,icon, selected, setSelected}) => {
         return (
             <MenuItem
-            active={selected === title}            
-            onClick={() => setSelected(title)}
+            active={selected === title}     
+            onClick={()=> handleClickItem(to,title)}       
+            // onClick={() => setSelected(title)}
             icon={icon}>
-                <p>{title}</p>
-                <Link to={to} />
+            <p>{title}</p>
+            {/* component={<Link to={to}/>} */}
+            {/* <Link to={to} /> */}
+            
             </MenuItem>
         )
     }
-
+    const handleClickItem = (link,title) => {
+        setSelected(title)
+        navigate(link)
+    }
     const { toggleSidebar, collapseSidebar, broken, collapsed } = useProSidebar();
     const [selected, setSelected] = useState("Dashboard");
     const [menuCollapse, setMenuCollapse] = useState(false)
     return (
         <>
             <SidebarAccount 
+                        roleUser = {roleUser}
                         Item = {Item}
                         collapsed = {collapsed}
                         selected = {selected}
@@ -55,7 +75,7 @@ const AdminContainer = () => {
                                 </div>
                                 <div className="navbar-profile dropdown">
                                     <img className='navbar__avatar' src='/assets/img/st1.png'/>
-                                   <p className='navbar-profile-name'> La Dien  </p>
+                                    <p className='navbar-profile-name'> {convertRole(userInfo.roleId)}. {userInfo.firstName} {userInfo.lastName}  </p>
                                 </div>
                             </section>
                     </div>    
@@ -64,7 +84,7 @@ const AdminContainer = () => {
                     <div className="main-container ">           
                 
                     <div className="display">
-                        display here
+                        <Outlet/>
                     </div>
                     </div>
                 </div>

@@ -1,13 +1,5 @@
 `use strict`
 
-// const StatusCode = {
-//     FORBIDDEN: -1,
-//     CONFLICT: -1,
-//     NOTFOUND: -2,
-//     EXISTED: -1,
-//     UNAUTHORIZED: -1
-// }
-
 const StatusCode = {
     FORBIDDEN: 400,
     CONFLICT: 409,
